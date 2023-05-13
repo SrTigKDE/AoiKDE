@@ -6,7 +6,7 @@ module.exports = [{
   category: "Economia",
   code: `
   
-  $setGlobalUserVar[wallet;$sum[$getGlobalUserVar[wallet;$authorID];$get[daily]];$authorID]
+  $setGlobalUserVar[NOME DA VARIÁVEL DE CARTEIRA;$sum[$getGlobalUserVar[NOME DA VARIÁVEL DE CARTEIRA;$authorID];$get[daily]];$authorID]
 
   $color[#ffffff]
   $title[**Baú de Recompensa Diária**]
@@ -14,7 +14,7 @@ module.exports = [{
   $addField[Próximo Baú;<t:$round[$math[($datestamp/1000)+86400]]:F>]
   $description[
   **$userTag[$authorID]**, obrigado por coletar seu baú de presente diário! 
-  Você ganhou <:trizes_amanitakde:1100930885504741467>  **$numberSeparator[$get[daily];,] Trizes** \`($abbreviate[$get[daily];1])\` nesse baú.]
+  Você ganhou <:trizes_amanitakde:1100930885504741467>  **$numberSeparator[$get[daily];,] NOME DE SUA MOEDA** \`($abbreviate[$get[daily];1])\` nesse baú.]
   $footer[$userTag[$authorID];$useravatar]
   $addTimestamp
 
