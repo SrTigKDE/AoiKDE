@@ -14,7 +14,7 @@ module.exports = [{
   $addField[Próximo Baú;<t:$round[$math[($datestamp/1000)+86400]]:F>]
   $description[
   **$userTag[$authorID]**, obrigado por coletar seu baú de presente diário! 
-  Você ganhou <:trizes_amanitakde:1100930885504741467>  **$numberSeparator[$get[daily];,] NOME DE SUA MOEDA** \`($abbreviate[$get[daily];1])\` nesse baú.]
+  Você ganhou **$numberSeparator[$get[daily];,] NOME DE SUA MOEDA** \`($abbreviate[$get[daily];1])\` nesse baú.]
   $footer[$userTag[$authorID];$useravatar]
   $addTimestamp
 
@@ -22,7 +22,7 @@ module.exports = [{
 
   $globalCooldown[1d;{newEmbed:{description:**$userTag[$authorID]**, espere \`%hour% horas %min% minutos %sec% segundos\` para poder utilizar esse comando novamente.}{color:#ffffff}] 
 
-<@$authorID>
+  <@$authorID>
   $reply
 `
 }]
